@@ -1,0 +1,105 @@
+2022-05-27 18:23:03.9326 DEBUG Connection id "0HMHVUFN64U4K" accepted.
+2022-05-27 18:23:03.9385 DEBUG Connection id "0HMHVUFN64U4K" started.
+2022-05-27 18:23:03.9385 DEBUG Connection 0HMHVUFN64U4K established using the following protocol: Tls12
+2022-05-27 18:23:03.9385 INFO Request starting HTTP/2 GET https://localhost:7277/WeatherForecast - -
+2022-05-27 18:23:03.9385 DEBUG 1 candidate(s) found for the request path '/WeatherForecast'
+2022-05-27 18:23:03.9385 DEBUG Endpoint 'CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees)' with route pattern 'WeatherForecast' is valid for the request path '/WeatherForecast'
+2022-05-27 18:23:03.9385 DEBUG Request matched endpoint 'CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees)'
+2022-05-27 18:23:03.9385 DEBUG Static files was skipped as the request already matched an endpoint.
+2022-05-27 18:23:03.9385 INFO Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /WeatherForecast
+Accept: text/plain
+Host: localhost:7277
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2022-05-27 18:23:03.9385 INFO Executing endpoint 'CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees)'
+2022-05-27 18:23:03.9385 INFO Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[CompanyEmployees.WeatherForecast] Get() on controller CompanyEmployees.Controllers.WeatherForecastController (CompanyEmployees).
+2022-05-27 18:23:03.9385 DEBUG Execution plan of authorization filters (in the following order): None
+2022-05-27 18:23:03.9385 DEBUG Execution plan of resource filters (in the following order): None
+2022-05-27 18:23:03.9385 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2022-05-27 18:23:03.9385 DEBUG Execution plan of exception filters (in the following order): None
+2022-05-27 18:23:03.9385 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2022-05-27 18:23:03.9385 DEBUG Executing controller factory for controller CompanyEmployees.Controllers.WeatherForecastController (CompanyEmployees)
+2022-05-27 18:23:03.9554 DEBUG Executed controller factory for controller CompanyEmployees.Controllers.WeatherForecastController (CompanyEmployees)
+2022-05-27 18:23:03.9554 WARN Use x
+2022-05-27 18:23:03.9554 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2022-05-27 18:23:03.9554 DEBUG Attempting to select an output formatter based on Accept header 'text/plain'.
+2022-05-27 18:23:03.9554 DEBUG Could not find an output formatter based on content negotiation. Accepted types were (text/plain)
+2022-05-27 18:23:03.9554 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-05-27 18:23:03.9554 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2022-05-27 18:23:03.9554 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-05-27 18:23:03.9554 INFO Executing ObjectResult, writing value of type 'CompanyEmployees.WeatherForecast[]'.
+2022-05-27 18:23:03.9554 INFO Executed action CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees) in 5.5239ms
+2022-05-27 18:23:03.9554 INFO Executed endpoint 'CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees)'
+2022-05-27 18:23:03.9554 INFO Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Fri, 27 May 2022 15:23:03 GMT
+Server: Kestrel
+2022-05-27 18:23:03.9554 INFO Request finished HTTP/2 GET https://localhost:7277/WeatherForecast - - - 200 - application/json;+charset=utf-8 8.0245ms
+2022-05-27 18:23:04.8691 INFO Request starting HTTP/2 GET https://localhost:7277/WeatherForecast - -
+2022-05-27 18:23:04.8691 DEBUG 1 candidate(s) found for the request path '/WeatherForecast'
+2022-05-27 18:23:04.8691 DEBUG Endpoint 'CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees)' with route pattern 'WeatherForecast' is valid for the request path '/WeatherForecast'
+2022-05-27 18:23:04.8691 DEBUG Request matched endpoint 'CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees)'
+2022-05-27 18:23:04.8691 DEBUG Static files was skipped as the request already matched an endpoint.
+2022-05-27 18:23:04.8691 INFO Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /WeatherForecast
+Accept: text/plain
+Host: localhost:7277
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2022-05-27 18:23:04.8691 INFO Executing endpoint 'CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees)'
+2022-05-27 18:23:04.8691 INFO Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[CompanyEmployees.WeatherForecast] Get() on controller CompanyEmployees.Controllers.WeatherForecastController (CompanyEmployees).
+2022-05-27 18:23:04.8691 DEBUG Execution plan of authorization filters (in the following order): None
+2022-05-27 18:23:04.8691 DEBUG Execution plan of resource filters (in the following order): None
+2022-05-27 18:23:04.8691 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2022-05-27 18:23:04.8691 DEBUG Execution plan of exception filters (in the following order): None
+2022-05-27 18:23:04.8691 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2022-05-27 18:23:04.8691 DEBUG Executing controller factory for controller CompanyEmployees.Controllers.WeatherForecastController (CompanyEmployees)
+2022-05-27 18:23:04.8691 DEBUG Executed controller factory for controller CompanyEmployees.Controllers.WeatherForecastController (CompanyEmployees)
+2022-05-27 18:23:04.8691 WARN Use x
+2022-05-27 18:23:04.8691 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2022-05-27 18:23:04.8691 DEBUG Attempting to select an output formatter based on Accept header 'text/plain'.
+2022-05-27 18:23:04.8691 DEBUG Could not find an output formatter based on content negotiation. Accepted types were (text/plain)
+2022-05-27 18:23:04.8691 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-05-27 18:23:04.8691 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2022-05-27 18:23:04.8691 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-05-27 18:23:04.8691 INFO Executing ObjectResult, writing value of type 'CompanyEmployees.WeatherForecast[]'.
+2022-05-27 18:23:04.8691 INFO Executed action CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees) in 0.8617ms
+2022-05-27 18:23:04.8691 INFO Executed endpoint 'CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees)'
+2022-05-27 18:23:04.8691 INFO Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Fri, 27 May 2022 15:23:04 GMT
+Server: Kestrel
+2022-05-27 18:23:04.8691 INFO Request finished HTTP/2 GET https://localhost:7277/WeatherForecast - - - 200 - application/json;+charset=utf-8 1.9514ms
+2022-05-27 18:23:06.1691 DEBUG Connection id "0HMHVUFN64U4K" received FIN.
+2022-05-27 18:23:06.1691 DEBUG Connection id "0HMHVUFN64U4K" is closed. The last processed stream ID was 3.
+2022-05-27 18:23:06.1691 DEBUG Connection id "0HMHVUFN64U4K" sending FIN because: "The client closed the connection."
+2022-05-27 18:23:06.1691 DEBUG Connection id "0HMHVUFN64U4K" stopped.

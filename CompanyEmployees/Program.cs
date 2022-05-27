@@ -1,6 +1,13 @@
+global using Contracts;
+global using LoggerService;
+global using NLog.Extensions.Logging;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<ILoggerManager, LoggerManager>();
+
+ConfigureLogging(builder.Logging);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -15,6 +22,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+void ConfigureLogging(ILoggingBuilder loggingBuilder)
+{
+    loggingBuilder.ClearProviders();
+    loggingBuilder.AddNLog();
+};
+
+app.UseHttpLogging();
 
 app.UseHttpsRedirection();
 
