@@ -103,3 +103,16 @@ Server: Kestrel
 2022-05-27 18:23:06.1691 DEBUG Connection id "0HMHVUFN64U4K" is closed. The last processed stream ID was 3.
 2022-05-27 18:23:06.1691 DEBUG Connection id "0HMHVUFN64U4K" sending FIN because: "The client closed the connection."
 2022-05-27 18:23:06.1691 DEBUG Connection id "0HMHVUFN64U4K" stopped.
+2022-05-27 20:04:06.8599 DEBUG Connection id "0HMHVUFN64U4L" accepted.
+2022-05-27 20:04:06.8685 DEBUG Connection id "0HMHVUFN64U4L" started.
+2022-05-27 20:04:06.8946 DEBUG Connection 0HMHVUFN64U4L established using the following protocol: Tls12
+2022-05-27 20:04:06.9118 INFO Request starting HTTP/2 GET https://localhost:7277/_framework/aspnetcore-browser-refresh.js - -
+2022-05-27 20:04:06.9279 INFO Request finished HTTP/2 GET https://localhost:7277/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 15.5475ms
+2022-05-27 20:04:07.1055 INFO Request starting HTTP/2 GET https://localhost:7277/swagger/v1/swagger.json - -
+2022-05-27 20:04:07.1055 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2022-05-27 20:04:07.1055 DEBUG Request did not match any endpoints
+2022-05-27 20:04:07.1517 INFO Request finished HTTP/2 GET https://localhost:7277/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 46.2016ms
+2022-05-27 20:04:25.3202 DEBUG Connection id "0HMHVUFN64U4L" received FIN.
+2022-05-27 20:04:25.3568 DEBUG Connection id "0HMHVUFN64U4L" is closed. The last processed stream ID was 3.
+2022-05-27 20:04:25.3708 DEBUG Connection id "0HMHVUFN64U4L" sending FIN because: "The client closed the connection."
+2022-05-27 20:04:25.3857 DEBUG Connection id "0HMHVUFN64U4L" stopped.
