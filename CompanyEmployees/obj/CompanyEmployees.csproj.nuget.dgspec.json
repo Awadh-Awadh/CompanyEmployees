@@ -33,6 +33,9 @@
               },
               "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\LoggerService\\LoggerService.csproj": {
                 "projectPath": "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\LoggerService\\LoggerService.csproj"
+              },
+              "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\Repository\\Repository.csproj"
               }
             }
           }
@@ -210,6 +213,66 @@
         }
       }
     },
+    "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\Infra\\Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\Infra\\Infra.csproj",
+        "projectName": "Infra",
+        "projectPath": "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\Infra\\Infra.csproj",
+        "packagesPath": "C:\\Users\\AwadhSaid\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\AwadhSaid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\LoggerService\\LoggerService.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -259,6 +322,70 @@
               "version": "[5.0.0, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\Repository\\Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\Repository\\Repository.csproj",
+        "projectName": "Repository",
+        "projectPath": "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\AwadhSaid\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\AwadhSaid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\Contracts\\Contracts.csproj"
+              },
+              "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\Entities\\Entities.csproj"
+              },
+              "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\Infra\\Infra.csproj": {
+                "projectPath": "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\Infra\\Infra.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",

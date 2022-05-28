@@ -1633,6 +1633,19 @@
           "bin/placeholder/Entities.dll": {}
         }
       },
+      "Infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.5"
+        },
+        "compile": {
+          "bin/placeholder/Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infra.dll": {}
+        }
+      },
       "LoggerService/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1646,6 +1659,21 @@
         },
         "runtime": {
           "bin/placeholder/LoggerService.dll": {}
+        }
+      },
+      "Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Contracts": "1.0.0",
+          "Entities": "1.0.0",
+          "Infra": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repository.dll": {}
         }
       }
     }
@@ -5600,10 +5628,20 @@
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
     },
+    "Infra/1.0.0": {
+      "type": "project",
+      "path": "../Infra/Infra.csproj",
+      "msbuildProject": "../Infra/Infra.csproj"
+    },
     "LoggerService/1.0.0": {
       "type": "project",
       "path": "../LoggerService/LoggerService.csproj",
       "msbuildProject": "../LoggerService/LoggerService.csproj"
+    },
+    "Repository/1.0.0": {
+      "type": "project",
+      "path": "../Repository/Repository.csproj",
+      "msbuildProject": "../Repository/Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5614,6 +5652,7 @@
       "Microsoft.EntityFrameworkCore.Sqlite.Design >= 1.1.6",
       "NLog >= 5.0.0",
       "NLog.Extensions.Logging >= 5.0.0",
+      "Repository >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -5649,6 +5688,9 @@
             },
             "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\LoggerService\\LoggerService.csproj": {
               "projectPath": "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\LoggerService\\LoggerService.csproj"
+            },
+            "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\Repository\\Repository.csproj"
             }
           }
         }
