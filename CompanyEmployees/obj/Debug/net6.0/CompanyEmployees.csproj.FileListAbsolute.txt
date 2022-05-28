@@ -32,3 +32,5 @@ C:\Users\AwadhSaid\Desktop\Awadh-dev\Projects\CompanyEmployees\CompanyEmployees\
 C:\Users\AwadhSaid\Desktop\Awadh-dev\Projects\CompanyEmployees\CompanyEmployees\obj\Debug\net6.0\CompanyEmployees.pdb
 C:\Users\AwadhSaid\Desktop\Awadh-dev\Projects\CompanyEmployees\CompanyEmployees\obj\Debug\net6.0\CompanyEmployees.genruntimeconfig.cache
 C:\Users\AwadhSaid\Desktop\Awadh-dev\Projects\CompanyEmployees\CompanyEmployees\obj\Debug\net6.0\ref\CompanyEmployees.dll
+C:\Users\AwadhSaid\Desktop\Awadh-dev\Projects\CompanyEmployees\CompanyEmployees\bin\Debug\net6.0\Entities.dll
+C:\Users\AwadhSaid\Desktop\Awadh-dev\Projects\CompanyEmployees\CompanyEmployees\bin\Debug\net6.0\Entities.pdb
