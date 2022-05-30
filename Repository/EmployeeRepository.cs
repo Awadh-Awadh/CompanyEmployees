@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    internal class EmployeeRepository
+    public class EmployeeRepository : Repository<Company>, ICompanyRepository
     {
+        public EmployeeRepository(RepositoryContext repositoryContext) :base(repositoryContext)
+        {
+
+        }
     }
 }

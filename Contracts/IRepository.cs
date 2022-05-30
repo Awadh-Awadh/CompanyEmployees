@@ -13,7 +13,6 @@ namespace Contracts
         IQueryable<T> FindByCondition(Expression<Func<T, bool>> expresssion, bool trackChanges);
         void Create(T entity);
         void Update(T entity);
-        void Post(T entity);
         void Delete(T entity);
     }
 }
