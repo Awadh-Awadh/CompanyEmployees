@@ -1613,6 +1613,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Entities": "1.0.0",
           "NLog": "5.0.0",
           "NLog.Extensions.Logging": "5.0.0"
         },
