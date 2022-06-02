@@ -1,11 +1,13 @@
 global using Contracts;
 global using LoggerService;
 global using NLog.Extensions.Logging;
+using Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddScoped<ILoggerManager, LoggerManager>();
+builder.Services.AddScoped<IRepositoryManager, RepositoryManager>();
 
 ConfigureLogging(builder.Logging);
 

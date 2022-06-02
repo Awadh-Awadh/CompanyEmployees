@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Contracts
 {
-    internal interface IEmployeeRepository
+    public interface IEmployeeRepository
     {
+        // Add methods related only to Employee only
     }
 }

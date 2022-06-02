@@ -12,20 +12,20 @@ namespace Repository
 {
     public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
-        protected RepositoryContext RepositoryContext;
+        protected readonly RepositoryContext RepositoryContext;
 
         public RepositoryBase(RepositoryContext repositoryContext)
         {
                 RepositoryContext = repositoryContext;
         }
 
-        public IQueryable<T> FindAll(bool trackChanges) =>
+        public IEnumerable<T> FindAll(bool trackChanges) =>
             !trackChanges ?
                     RepositoryContext.Set<T>()
                         .AsNoTracking() :
                     RepositoryContext.Set<T>();
 
-        public IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression, bool trackChanges) =>
+        public IEnumerable<T> FindByCondition(Expression<Func<T, bool>> expression, bool trackChanges) =>
             !trackChanges ?
                 RepositoryContext.Set<T>()
                     .Where(expression)

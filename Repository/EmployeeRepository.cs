@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Contracts;
+using Entities.Model;
+using Infra.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class EmployeeRepository : Repository<Company>, ICompanyRepository
+    public class EmployeeRepository : RepositoryBase<Employee>, IEmployeeRepository
     {
-        public EmployeeRepository(RepositoryContext repositoryContext) :base(repositoryContext)
+        public EmployeeRepository(RepositoryContext repositoryContext) :base (repositoryContext)
         {
 
         }

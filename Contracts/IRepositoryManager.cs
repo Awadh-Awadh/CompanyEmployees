@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Contracts
 {
-    internal interface IRepositoryManager
+
+    // IUnitOfWork
+    // interfaces Entities and complete method
+    
+    public interface IRepositoryManager : IDisposable
     {
+        public ICompanyRepository Company { get; }
+        public IEmployeeRepository Employee { get; }
+        void Save();
+
     }
 }

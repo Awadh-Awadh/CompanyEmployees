@@ -28,9 +28,6 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\Entities\\Entities.csproj"
-              },
               "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\LoggerService\\LoggerService.csproj": {
                 "projectPath": "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\LoggerService\\LoggerService.csproj"
               },
