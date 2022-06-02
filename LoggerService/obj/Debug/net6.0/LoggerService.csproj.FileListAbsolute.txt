@@ -13,3 +13,5 @@ C:\Users\AwadhSaid\Desktop\Awadh-dev\Projects\CompanyEmployees\LoggerService\obj
 C:\Users\AwadhSaid\Desktop\Awadh-dev\Projects\CompanyEmployees\LoggerService\obj\Debug\net6.0\refint\LoggerService.dll
 C:\Users\AwadhSaid\Desktop\Awadh-dev\Projects\CompanyEmployees\LoggerService\obj\Debug\net6.0\LoggerService.pdb
 C:\Users\AwadhSaid\Desktop\Awadh-dev\Projects\CompanyEmployees\LoggerService\obj\Debug\net6.0\ref\LoggerService.dll
+C:\Users\AwadhSaid\Desktop\Awadh-dev\Projects\CompanyEmployees\LoggerService\bin\Debug\net6.0\Entities.dll
+C:\Users\AwadhSaid\Desktop\Awadh-dev\Projects\CompanyEmployees\LoggerService\bin\Debug\net6.0\Entities.pdb

@@ -1,0 +1,194 @@
+2022-06-02 21:53:09.7872 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2022-06-02 21:53:10.0531 DEBUG Hosting starting
+2022-06-02 21:53:10.8820 DEBUG Using development certificate: CN=localhost (Thumbprint: 4BFE1A6A66F0F571C5E0A9B7AA557514D602C66F)
+2022-06-02 21:53:11.0957 INFO Now listening on: https://localhost:7277
+2022-06-02 21:53:11.0957 INFO Now listening on: http://localhost:5277
+2022-06-02 21:53:11.0957 DEBUG Loaded hosting startup assembly CompanyEmployees
+2022-06-02 21:53:11.0957 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-06-02 21:53:11.0957 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-06-02 21:53:11.0957 INFO Application started. Press Ctrl+C to shut down.
+2022-06-02 21:53:11.0957 INFO Hosting environment: Development
+2022-06-02 21:53:11.0957 INFO Content root path: C:\Users\AwadhSaid\Desktop\Awadh-dev\Projects\CompanyEmployees\CompanyEmployees\
+2022-06-02 21:53:11.0957 DEBUG Hosting started
+2022-06-02 21:53:11.9227 DEBUG Connection id "0HMI4P4I9AIO2" received FIN.
+2022-06-02 21:53:11.9392 DEBUG Connection id "0HMI4P4I9AIO2" accepted.
+2022-06-02 21:53:11.9392 DEBUG Connection id "0HMI4P4I9AIO2" started.
+2022-06-02 21:53:11.9906 DEBUG Failed to authenticate HTTPS connection.
+2022-06-02 21:53:11.9991 DEBUG Connection id "0HMI4P4I9AIO2" stopped.
+2022-06-02 21:53:11.9991 DEBUG Connection id "0HMI4P4I9AIO2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-06-02 21:53:13.2348 DEBUG Connection id "0HMI4P4I9AIO3" accepted.
+2022-06-02 21:53:13.2348 DEBUG Connection id "0HMI4P4I9AIO4" accepted.
+2022-06-02 21:53:13.2348 DEBUG Connection id "0HMI4P4I9AIO3" started.
+2022-06-02 21:53:13.2348 DEBUG Connection id "0HMI4P4I9AIO4" started.
+2022-06-02 21:53:13.3387 DEBUG Connection id "0HMI4P4I9AIO3" received FIN.
+2022-06-02 21:53:13.3614 DEBUG Connection 0HMI4P4I9AIO4 established using the following protocol: Tls12
+2022-06-02 21:53:13.3614 DEBUG Connection 0HMI4P4I9AIO3 established using the following protocol: Tls12
+2022-06-02 21:53:13.3857 DEBUG Connection id "0HMI4P4I9AIO3" is closed. The last processed stream ID was 0.
+2022-06-02 21:53:13.3857 DEBUG Connection id "0HMI4P4I9AIO3" sending FIN because: "The client closed the connection."
+2022-06-02 21:53:13.3857 DEBUG Connection id "0HMI4P4I9AIO3" stopped.
+2022-06-02 21:53:13.4781 INFO Request starting HTTP/2 GET https://localhost:7277/swagger - -
+2022-06-02 21:53:13.6369 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2022-06-02 21:53:13.7144 DEBUG No candidates found for the request path '/swagger'
+2022-06-02 21:53:13.7144 DEBUG Request did not match any endpoints
+2022-06-02 21:53:13.9225 INFO Request finished HTTP/2 GET https://localhost:7277/swagger - - - 301 0 - 448.9082ms
+2022-06-02 21:53:13.9718 INFO Request starting HTTP/2 GET https://localhost:7277/swagger/index.html - -
+2022-06-02 21:53:13.9718 DEBUG No candidates found for the request path '/swagger/index.html'
+2022-06-02 21:53:13.9718 DEBUG Request did not match any endpoints
+2022-06-02 21:53:14.5710 DEBUG Response markup is scheduled to include browser refresh script injection.
+2022-06-02 21:53:15.1200 INFO Request starting HTTP/2 GET https://localhost:7277/swagger/swagger-ui.css - -
+2022-06-02 21:53:15.1203 DEBUG No candidates found for the request path '/swagger/swagger-ui.css'
+2022-06-02 21:53:15.1203 DEBUG Request did not match any endpoints
+2022-06-02 21:53:15.3032 INFO Request starting HTTP/2 GET https://localhost:7277/swagger/swagger-ui-bundle.js - -
+2022-06-02 21:53:15.3032 DEBUG No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2022-06-02 21:53:15.3032 DEBUG Request did not match any endpoints
+2022-06-02 21:53:15.5328 INFO Request starting HTTP/2 GET https://localhost:7277/swagger/swagger-ui-standalone-preset.js - -
+2022-06-02 21:53:15.5328 DEBUG No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2022-06-02 21:53:15.5328 DEBUG Request did not match any endpoints
+2022-06-02 21:53:15.5328 DEBUG Response markup was updated to include browser refresh script injection.
+2022-06-02 21:53:15.5328 INFO Request finished HTTP/2 GET https://localhost:7277/swagger/index.html - - - 200 - text/html;charset=utf-8 1563.3894ms
+2022-06-02 21:53:15.6883 INFO Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-06-02 21:53:15.6883 INFO Request finished HTTP/2 GET https://localhost:7277/swagger/swagger-ui.css - - - 200 143632 text/css 575.3416ms
+2022-06-02 21:53:15.7240 INFO Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-06-02 21:53:15.7393 INFO Request finished HTTP/2 GET https://localhost:7277/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 206.7527ms
+2022-06-02 21:53:15.7817 INFO Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-06-02 21:53:15.7817 INFO Request finished HTTP/2 GET https://localhost:7277/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 479.0040ms
+2022-06-02 21:53:16.1328 INFO Request starting HTTP/2 GET https://localhost:7277/_framework/aspnetcore-browser-refresh.js - -
+2022-06-02 21:53:16.1605 INFO Request finished HTTP/2 GET https://localhost:7277/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 27.6365ms
+2022-06-02 21:53:16.5579 INFO Request starting HTTP/2 GET https://localhost:7277/swagger/v1/swagger.json - -
+2022-06-02 21:53:16.5579 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2022-06-02 21:53:16.5579 DEBUG Request did not match any endpoints
+2022-06-02 21:53:16.6996 INFO Request finished HTTP/2 GET https://localhost:7277/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 141.6729ms
+2022-06-02 21:53:19.3221 DEBUG Connection id "0HMI4P4I9AIO4" received FIN.
+2022-06-02 21:53:19.3238 DEBUG Connection id "0HMI4P4I9AIO4" is closed. The last processed stream ID was 13.
+2022-06-02 21:53:19.3238 DEBUG Connection id "0HMI4P4I9AIO4" sending FIN because: "The client closed the connection."
+2022-06-02 21:53:19.3238 DEBUG Connection id "0HMI4P4I9AIO4" stopped.
+2022-06-02 21:53:26.3223 DEBUG Connection id "0HMI4P4I9AIO5" accepted.
+2022-06-02 21:53:26.3240 DEBUG Connection id "0HMI4P4I9AIO5" started.
+2022-06-02 21:53:26.3406 DEBUG Connection 0HMI4P4I9AIO5 established using the following protocol: Tls12
+2022-06-02 21:53:26.3406 INFO Request starting HTTP/2 GET https://localhost:7277/api/Companies - -
+2022-06-02 21:53:26.3406 DEBUG 1 candidate(s) found for the request path '/api/Companies'
+2022-06-02 21:53:26.3616 DEBUG Endpoint 'CompanyEmployees.Controllers.CompaniesController.GetCompanies (CompanyEmployees)' with route pattern 'api/Companies' is valid for the request path '/api/Companies'
+2022-06-02 21:53:26.3616 DEBUG Request matched endpoint 'CompanyEmployees.Controllers.CompaniesController.GetCompanies (CompanyEmployees)'
+2022-06-02 21:53:26.3616 DEBUG Static files was skipped as the request already matched an endpoint.
+2022-06-02 21:53:26.3789 INFO Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Companies
+Accept: */*
+Host: localhost:7277
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.61 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2022-06-02 21:53:26.3789 INFO Executing endpoint 'CompanyEmployees.Controllers.CompaniesController.GetCompanies (CompanyEmployees)'
+2022-06-02 21:53:26.4679 INFO Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees).
+2022-06-02 21:53:26.4679 DEBUG Execution plan of authorization filters (in the following order): None
+2022-06-02 21:53:26.4679 DEBUG Execution plan of resource filters (in the following order): None
+2022-06-02 21:53:26.4679 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2022-06-02 21:53:26.4679 DEBUG Execution plan of exception filters (in the following order): None
+2022-06-02 21:53:26.4679 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2022-06-02 21:53:26.4679 DEBUG Executing controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees)
+2022-06-02 21:53:26.4936 INFO Executed action CompanyEmployees.Controllers.CompaniesController.GetCompanies (CompanyEmployees) in 8.438ms
+2022-06-02 21:53:26.5029 INFO Executed endpoint 'CompanyEmployees.Controllers.CompaniesController.GetCompanies (CompanyEmployees)'
+2022-06-02 21:53:26.5029 ERROR An unhandled exception has occurred while executing the request.
+2022-06-02 21:53:26.8688 INFO Request finished HTTP/2 GET https://localhost:7277/api/Companies - - - 500 - text/plain;+charset=utf-8 525.8495ms
+2022-06-02 21:53:29.3008 DEBUG Connection id "0HMI4P4I9AIO5" received FIN.
+2022-06-02 21:53:29.3008 DEBUG Connection id "0HMI4P4I9AIO5" is closed. The last processed stream ID was 1.
+2022-06-02 21:53:29.3008 DEBUG Connection id "0HMI4P4I9AIO5" sending FIN because: "The client closed the connection."
+2022-06-02 21:53:29.3008 DEBUG Connection id "0HMI4P4I9AIO5" stopped.
+2022-06-02 21:57:43.5050 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2022-06-02 21:57:43.7610 DEBUG Hosting starting
+2022-06-02 21:57:44.5165 DEBUG Using development certificate: CN=localhost (Thumbprint: 4BFE1A6A66F0F571C5E0A9B7AA557514D602C66F)
+2022-06-02 21:57:44.7742 INFO Now listening on: https://localhost:7277
+2022-06-02 21:57:44.7742 INFO Now listening on: http://localhost:5277
+2022-06-02 21:57:44.7742 DEBUG Loaded hosting startup assembly CompanyEmployees
+2022-06-02 21:57:44.7742 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-06-02 21:57:44.7742 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-06-02 21:57:44.7742 INFO Application started. Press Ctrl+C to shut down.
+2022-06-02 21:57:44.7774 INFO Hosting environment: Development
+2022-06-02 21:57:44.7774 INFO Content root path: C:\Users\AwadhSaid\Desktop\Awadh-dev\Projects\CompanyEmployees\CompanyEmployees\
+2022-06-02 21:57:44.7774 DEBUG Hosting started
+2022-06-02 21:57:44.8127 DEBUG Connection id "0HMI4P73JPQRH" received FIN.
+2022-06-02 21:57:44.8334 DEBUG Connection id "0HMI4P73JPQRH" accepted.
+2022-06-02 21:57:44.8334 DEBUG Connection id "0HMI4P73JPQRH" started.
+2022-06-02 21:57:44.8934 DEBUG Failed to authenticate HTTPS connection.
+2022-06-02 21:57:44.8934 DEBUG Connection id "0HMI4P73JPQRH" stopped.
+2022-06-02 21:57:44.9097 DEBUG Connection id "0HMI4P73JPQRH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-06-02 21:57:46.8324 DEBUG Connection id "0HMI4P73JPQRI" accepted.
+2022-06-02 21:57:46.8390 DEBUG Connection id "0HMI4P73JPQRI" started.
+2022-06-02 21:57:47.1082 DEBUG Connection 0HMI4P73JPQRI established using the following protocol: Tls12
+2022-06-02 21:57:47.2887 INFO Request starting HTTP/2 GET https://localhost:7277/swagger/index.html - -
+2022-06-02 21:57:47.4068 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2022-06-02 21:57:47.4968 DEBUG No candidates found for the request path '/swagger/index.html'
+2022-06-02 21:57:47.4968 DEBUG Request did not match any endpoints
+2022-06-02 21:57:48.0370 DEBUG Response markup is scheduled to include browser refresh script injection.
+2022-06-02 21:57:48.4906 DEBUG Response markup was updated to include browser refresh script injection.
+2022-06-02 21:57:48.4985 INFO Request starting HTTP/2 GET https://localhost:7277/_framework/aspnetcore-browser-refresh.js - -
+2022-06-02 21:57:48.4985 INFO Request finished HTTP/2 GET https://localhost:7277/swagger/index.html - - - 200 - text/html;charset=utf-8 1219.0166ms
+2022-06-02 21:57:48.4985 INFO Request finished HTTP/2 GET https://localhost:7277/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 8.2244ms
+2022-06-02 21:57:48.9590 INFO Request starting HTTP/2 GET https://localhost:7277/swagger/v1/swagger.json - -
+2022-06-02 21:57:48.9590 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2022-06-02 21:57:48.9590 DEBUG Request did not match any endpoints
+2022-06-02 21:57:49.1085 INFO Request finished HTTP/2 GET https://localhost:7277/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 149.3634ms
+2022-06-02 21:57:54.7415 DEBUG Connection id "0HMI4P73JPQRI" received FIN.
+2022-06-02 21:57:54.7519 DEBUG Connection id "0HMI4P73JPQRI" is closed. The last processed stream ID was 5.
+2022-06-02 21:57:54.7519 DEBUG Connection id "0HMI4P73JPQRI" sending FIN because: "The client closed the connection."
+2022-06-02 21:57:54.7608 DEBUG Connection id "0HMI4P73JPQRI" stopped.
+2022-06-02 21:58:13.7420 DEBUG Connection id "0HMI4P73JPQRJ" accepted.
+2022-06-02 21:58:13.7471 DEBUG Connection id "0HMI4P73JPQRJ" started.
+2022-06-02 21:58:13.7641 DEBUG Connection id "0HMI4P73JPQRJ" received FIN.
+2022-06-02 21:58:13.7790 DEBUG Connection id "0HMI4P73JPQRK" accepted.
+2022-06-02 21:58:13.7790 DEBUG Connection id "0HMI4P73JPQRK" started.
+2022-06-02 21:58:13.8069 DEBUG Failed to authenticate HTTPS connection.
+2022-06-02 21:58:13.8069 DEBUG Connection id "0HMI4P73JPQRJ" stopped.
+2022-06-02 21:58:13.8069 DEBUG Connection id "0HMI4P73JPQRJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-06-02 21:58:13.8297 DEBUG Connection 0HMI4P73JPQRK established using the following protocol: Tls12
+2022-06-02 21:58:13.8651 INFO Request starting HTTP/1.1 GET https://localhost:7277/ - -
+2022-06-02 21:58:13.8651 DEBUG No candidates found for the request path '/'
+2022-06-02 21:58:13.8651 DEBUG Request did not match any endpoints
+2022-06-02 21:58:13.8726 DEBUG The request path  does not match the path filter
+2022-06-02 21:58:13.8881 INFO Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /
+Accept: */*
+Connection: keep-alive
+Host: localhost:7277
+User-Agent: PostmanRuntime/7.29.0
+Accept-Encoding: gzip, deflate, br
+Postman-Token: [Redacted]
+2022-06-02 21:58:13.8881 INFO Response:
+StatusCode: 404
+2022-06-02 21:58:13.9396 DEBUG Connection id "0HMI4P73JPQRK" completed keep alive response.
+2022-06-02 21:58:13.9396 INFO Request finished HTTP/1.1 GET https://localhost:7277/ - - - 404 0 - 74.8793ms
+2022-06-02 21:58:26.0898 INFO Request starting HTTP/1.1 GET https://localhost:7277/ - -
+2022-06-02 21:58:26.0898 DEBUG No candidates found for the request path '/'
+2022-06-02 21:58:26.0898 DEBUG Request did not match any endpoints
+2022-06-02 21:58:26.0898 DEBUG The request path  does not match the path filter
+2022-06-02 21:58:26.0898 INFO Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /
+Accept: */*
+Connection: keep-alive
+Host: localhost:7277
+User-Agent: PostmanRuntime/7.29.0
+Accept-Encoding: gzip, deflate, br
+Postman-Token: [Redacted]
+2022-06-02 21:58:26.0898 INFO Response:
+StatusCode: 404
+2022-06-02 21:58:26.0898 DEBUG Connection id "0HMI4P73JPQRK" completed keep alive response.
+2022-06-02 21:58:26.0898 INFO Request finished HTTP/1.1 GET https://localhost:7277/ - - - 404 0 - 2.2180ms

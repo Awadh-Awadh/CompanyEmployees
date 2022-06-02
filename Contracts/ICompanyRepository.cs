@@ -10,5 +10,7 @@ namespace Contracts
     public interface ICompanyRepository : IRepositoryBase<Company>
     {
         // Add methods related only to Company only
+
+        IEnumerable<Company> GetAllCompanies(bool trackChanges);
     }
 }
