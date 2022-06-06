@@ -12,5 +12,6 @@ namespace Contracts
         // Add methods related only to Company only
 
         IEnumerable<Company> GetAllCompanies(bool trackChanges);
+        Company GetCompanyById(int id, bool trackChanges);
     }
 }

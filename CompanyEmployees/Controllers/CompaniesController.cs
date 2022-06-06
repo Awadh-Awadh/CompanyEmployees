@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Entities.DTOs;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CompanyEmployees.Controllers
@@ -23,8 +24,14 @@ namespace CompanyEmployees.Controllers
             try
             {
                 var comapnies = _repository.Company.GetAllCompanies(trackChanges: false);
+                var companyDto = comapnies.Select(x => new CompanyDTO
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    FullAddress = string.Join(' ', x.Address, x.Country)
+                }).ToList();
 
-                return Ok(comapnies);
+                return Ok(companyDto);
             }
             catch (Exception ex)
             {
@@ -34,6 +41,25 @@ namespace CompanyEmployees.Controllers
         }
 
 
+        [HttpGet("{id}")]
+
+        public ActionResult GetCompanyById(int id)
+        {
+           var company = _repository.Company.GetCompanyById(id, trackChanges: false);
+           if(company == null)
+            {
+                _logger.LogError($"Company with {id} not found");
+            }
+             var companyDto = new CompanyDTO
+                {
+                    Id = company.Id,
+                    Name = company.Name,
+                    FullAddress = string.Join(' ', company.Address, company.Country)
+                };
+
+                return Ok(companyDto);
+        }
+        
 
 
     }

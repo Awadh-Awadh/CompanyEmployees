@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Entities.DTOs
 {
-    internal class CompanyDTO
+    public class CompanyDTO
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string FullAddress { get; set; }
     }
 }
