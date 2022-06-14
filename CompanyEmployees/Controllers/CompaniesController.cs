@@ -1,4 +1,5 @@
 ﻿using Entities.DTOs;
+using Entities.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -58,6 +59,28 @@ namespace CompanyEmployees.Controllers
                 };
 
                 return Ok(companyDto);
+        }
+
+        [HttpPost]
+        public IActionResult CreateCompany([FromBody]CompanyForCreationDto company)
+        {
+            if(company == null)
+            {
+                _logger.LogError("CompanyForCreationDto object sent from client is null.");
+                return BadRequest("CompanyForCreationDto object is null");
+            }
+
+            var companyEntity = new Company()
+            {
+                Name = company.Name,
+                Address = company.Address,
+                Country = company.Country
+            };
+            
+            _repository.Company.CreateCompany(companyEntity);
+            
+            _repository.Save();
+            return CreatedAtRoute("CompanyById", new { id = companyEntity.Id }, companyEntity);
         }
         
 

@@ -10,7 +10,7 @@ namespace Contracts
     public interface IEmployeeRepository
     {
         // Add methods related only to Employee only
-        IEnumerable<Employee> GetAllEmployee(int companyId, bool trackChanges);
+        IEnumerable<Employee> GetAllEmployees(int companyId, bool trackChanges);
         Employee GetEmployee(int companyId, int id, bool trackChanges);
     }
    

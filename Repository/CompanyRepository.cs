@@ -23,6 +23,8 @@ namespace Repository
 
         public Company GetCompanyById(int id, bool trackChanges) =>
             FindByCondition(c => c.Id.Equals(id), trackChanges)
-            .SingleOrDefault(); 
+            .SingleOrDefault();
+
+        public void CreateCompany(Company company) => Create(company);
     }
 }
