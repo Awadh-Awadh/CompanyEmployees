@@ -12,6 +12,7 @@ namespace Contracts
         // Add methods related only to Employee only
         IEnumerable<Employee> GetAllEmployees(int companyId, bool trackChanges);
         Employee GetEmployee(int companyId, int id, bool trackChanges);
+        void CreateEmployeeForCompany(int companyId ,Employee employee);
     }
    
 }

@@ -14,8 +14,8 @@ namespace CompanyEmployees.Controllers
 
         public CompaniesController(IRepositoryManager repositoryManager, ILogger logger)
         {
-            repositoryManager = _repository;
-            logger = _logger;
+            _repository = repositoryManager ;
+            _logger = logger;
         }
 
         [HttpGet]
@@ -42,16 +42,17 @@ namespace CompanyEmployees.Controllers
         }
 
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}", Name = "CompanyById")]
 
         public ActionResult GetCompanyById(int id)
         {
            var company = _repository.Company.GetCompanyById(id, trackChanges: false);
+
            if(company == null)
-            {
                 _logger.LogError($"Company with {id} not found");
-            }
-             var companyDto = new CompanyDTO
+            
+
+           var companyDto = new CompanyDTO
                 {
                     Id = company.Id,
                     Name = company.Name,
@@ -80,6 +81,7 @@ namespace CompanyEmployees.Controllers
             _repository.Company.CreateCompany(companyEntity);
             
             _repository.Save();
+
             return CreatedAtRoute("CompanyById", new { id = companyEntity.Id }, companyEntity);
         }
         
