@@ -31,6 +31,7 @@ public class EmployeeController : ControllerBase
         }
 
         var employees = _repository.Employee.GetAllEmployees(company.Id, trackChanges: false);
+
         return Ok(employees.Select(x => new EmployeeDTO
         {
             Id = x.Id,
@@ -50,6 +51,7 @@ public class EmployeeController : ControllerBase
             return NotFound();
         }
         var employee = _repository.Employee.GetEmployee(companyId, empId, trackChanges: false);
+
         return Ok(new EmployeeDTO()
         {
             Id = employee.Id,
@@ -75,7 +77,9 @@ public class EmployeeController : ControllerBase
         };
 
         _repository.Employee.CreateEmployeeForCompany(companyId, employee);
+
         _repository.Save();
+
         return CreatedAtRoute("GetEmployeeById", new { companyId , id = employee.Id}, employee);
     }
 

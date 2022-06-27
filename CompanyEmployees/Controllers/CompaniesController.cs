@@ -62,6 +62,27 @@ namespace CompanyEmployees.Controllers
                 return Ok(companyDto);
         }
 
+        [HttpGet("collection/{ids}", Name = "CompanyCollection")]
+
+        public IActionResult GetCompanyCollection(IEnumerable<int> ids)
+        {
+            var companies = _repository.Company.GetCompanyCollection(ids, trackChanges: false);
+            if (companies.Count() != ids.Count())
+                return NotFound($"some ids are not valid");
+            foreach(var company in companies)
+            {
+                return Ok(new CompanyDTO()
+                {
+                    Id=company.Id,
+                    Name=company.Name,
+                    FullAddress=company.Address,
+
+                });
+            }
+            return Ok();
+        }
+
+
         [HttpPost]
         public IActionResult CreateCompany([FromBody]CompanyForCreationDto company)
         {

@@ -25,5 +25,9 @@ namespace Repository
             .SingleOrDefault();
 
         public void CreateCompany(Company company) => Create(company);
+
+        public IEnumerable<Company> GetCompanyCollection(IEnumerable<int> ids, bool trackChanges) =>
+            FindByCondition(x => ids.Contains(x.Id), trackChanges)
+            .ToList();
     }
 }
