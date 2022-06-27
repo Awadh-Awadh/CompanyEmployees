@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities.DTOs
+namespace Entities.DTOs;
+
+public class EmployeeForCreationDTO
 {
-    public class EmployeeForCreationDTO
-    {
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public string Position { get; set; }
-    }
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public string Position { get; set; }
 }
