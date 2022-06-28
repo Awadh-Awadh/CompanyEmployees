@@ -100,6 +100,24 @@ public class EmployeeController : ControllerBase
         return NoContent();
     }
 
+    [HttpPut("{id}")]
+    public IActionResult UpdateEployeeForCompany(int companyId, int id, [FromBody] EmployeeForUpdateDTO request)
+    {
+        if (_repository.Company.GetCompanyById(companyId, trackChanges: false) is { })
+            return NotFound();
+        if(_repository.Employee.GetEmployee(companyId, id, trackChanges: true) is not { } employeeEntity)
+            return NotFound();
+
+        employeeEntity.Name = request.Name;
+        employeeEntity.Age = request.Age;
+        employeeEntity.Position = request.Position;
+
+        _repository.Save();
+
+        return NoContent();
+
+    }
+
  }
 
 
