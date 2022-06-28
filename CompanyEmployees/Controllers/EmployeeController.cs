@@ -83,6 +83,22 @@ public class EmployeeController : ControllerBase
         return CreatedAtRoute("GetEmployeeById", new { companyId , id = employee.Id}, employee);
     }
 
+    [HttpDelete]
+
+    public IActionResult DeleteEmployee(int companyId, int id)
+    {
+        if(_repository.Company.GetCompanyById(companyId, trackChanges: false) is { } )
+            return NotFound();
+
+        if( _repository.Employee.GetEmployee(companyId, id, trackChanges: false) is not { } employee)
+            return NotFound( $"Employee with {id} not found");
+
+        _repository.Employee.DeleteEmployee(employee);
+
+        _repository.Save();
+
+        return NoContent();
+    }
 
  }
 
