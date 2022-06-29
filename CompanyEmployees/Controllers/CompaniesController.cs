@@ -92,6 +92,12 @@ namespace CompanyEmployees.Controllers
                 return BadRequest("CompanyForCreationDto object is null");
             }
 
+            if (!ModelState.IsValid)
+            {
+                _logger.LogError("Invalid model state for the Company ForCreationDto object");
+                return UnprocessableEntity(ModelState);
+            }
+
             var companyEntity = new Company()
             {
                 Name = company.Name,

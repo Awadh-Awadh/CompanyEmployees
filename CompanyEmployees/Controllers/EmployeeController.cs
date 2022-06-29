@@ -69,6 +69,11 @@ public class EmployeeController : ControllerBase
             _logger.LogInformation($"Company with id {companyId} not found");
             return NotFound();
         }
+        if (ModelState.IsValid)
+        {
+            _logger.LogError("Invalid model state for the EmployeeForCreationDto object");
+            return UnprocessableEntity(ModelState);
+        }
         var employee = new Employee()
         {
             Age = request.Age,
