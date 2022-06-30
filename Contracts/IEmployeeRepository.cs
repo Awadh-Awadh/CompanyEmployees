@@ -10,8 +10,8 @@ namespace Contracts
     public interface IEmployeeRepository
     {
         // Add methods related only to Employee only
-        IEnumerable<Employee> GetAllEmployees(int companyId, bool trackChanges);
-        Employee GetEmployee(int companyId, int id, bool trackChanges);
+        Task<IEnumerable<Employee>> GetAllEmployeesAsync(int companyId, bool trackChanges);
+        Task<Employee> GetEmployeeAsync(int companyId, int id, bool trackChanges);
         void CreateEmployeeForCompany(int companyId ,Employee employee);
         void DeleteEmployee(Employee employee);
 

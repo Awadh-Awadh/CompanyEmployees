@@ -21,16 +21,16 @@ public class EmployeeController : ControllerBase
 
     [HttpGet]
 
-    public IActionResult GetAllEmployee(int companyId, bool trackChanges)
+    public async Task<IActionResult> GetAllEmployeeAsync(int companyId, bool trackChanges)
     {
-        var company = _repository.Company.GetCompanyById(companyId, trackChanges: false);
+        var company = await _repository.Company.GetCompanyByIdAsync(companyId, trackChanges: false);
         if (company == null)
         {
             _logger.LogError("No company found");
             return NotFound();
         }
 
-        var employees = _repository.Employee.GetAllEmployees(company.Id, trackChanges: false);
+        var employees = await _repository.Employee.GetAllEmployeesAsync(company.Id, trackChanges: false);
 
         return Ok(employees.Select(x => new EmployeeDTO
         {
@@ -43,14 +43,14 @@ public class EmployeeController : ControllerBase
 
     [HttpGet("{id}", Name ="GetEmployeeById")]
 
-    public IActionResult GetCompanyEmployeeById(int companyId, int empId)
+    public async Task<IActionResult> GetCompanyEmployeeById(int companyId, int empId)
     {
-        if(_repository.Company.GetCompanyById(companyId, trackChanges: false) is not { } company)
+        if(await _repository.Company.GetCompanyByIdAsync(companyId, trackChanges: false) is not { } company)
         {
             _logger.LogInformation($"company with {companyId} not found");
             return NotFound();
         }
-        var employee = _repository.Employee.GetEmployee(companyId, empId, trackChanges: false);
+        var employee = await _repository.Employee.GetEmployeeAsync(companyId, empId, trackChanges: false);
 
         return Ok(new EmployeeDTO()
         {
@@ -62,9 +62,9 @@ public class EmployeeController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult CreateEmployee(int companyId, [FromBody] EmployeeForCreationDTO request)
+    public async Task<IActionResult> CreateEmployee(int companyId, [FromBody] EmployeeForCreationDTO request)
     {
-        if (_repository.Company.GetCompanyById(companyId, trackChanges: false) is not { } company)
+        if (await _repository.Company.GetCompanyByIdAsync(companyId, trackChanges: false) is not { } company)
         {
             _logger.LogInformation($"Company with id {companyId} not found");
             return NotFound();
@@ -83,41 +83,41 @@ public class EmployeeController : ControllerBase
 
         _repository.Employee.CreateEmployeeForCompany(companyId, employee);
 
-        _repository.Save();
+        await _repository.SaveAsync();
 
         return CreatedAtRoute("GetEmployeeById", new { companyId , id = employee.Id}, employee);
     }
 
     [HttpDelete]
 
-    public IActionResult DeleteEmployee(int companyId, int id)
+    public async Task<IActionResult> DeleteEmployee(int companyId, int id)
     {
-        if(_repository.Company.GetCompanyById(companyId, trackChanges: false) is { } )
+        if(await _repository.Company.GetCompanyByIdAsync(companyId, trackChanges: false) is { } )
             return NotFound();
 
-        if( _repository.Employee.GetEmployee(companyId, id, trackChanges: false) is not { } employee)
+        if( await _repository.Employee.GetEmployeeAsync(companyId, id, trackChanges: false) is not { } employee)
             return NotFound( $"Employee with {id} not found");
 
         _repository.Employee.DeleteEmployee(employee);
 
-        _repository.Save();
+       await _repository.SaveAsync();
 
         return NoContent();
     }
 
     [HttpPut("{id}")]
-    public IActionResult UpdateEployeeForCompany(int companyId, int id, [FromBody] EmployeeForUpdateDTO request)
+    public async Task<IActionResult> UpdateEployeeForCompany(int companyId, int id, [FromBody] EmployeeForUpdateDTO request)
     {
-        if (_repository.Company.GetCompanyById(companyId, trackChanges: false) is { })
+        if (await _repository.Company.GetCompanyByIdAsync(companyId, trackChanges: false) is { })
             return NotFound();
-        if(_repository.Employee.GetEmployee(companyId, id, trackChanges: true) is not { } employeeEntity)
+        if(await _repository.Employee.GetEmployeeAsync(companyId, id, trackChanges: true) is not { } employeeEntity)
             return NotFound();
 
         employeeEntity.Name = request.Name;
         employeeEntity.Age = request.Age;
         employeeEntity.Position = request.Position;
 
-        _repository.Save();
+       await _repository.SaveAsync();
 
         return NoContent();
 

@@ -16,14 +16,14 @@ namespace Repository
 
         }
 
-        public IEnumerable<Employee> GetAllEmployees(int companyId, bool trackChanges) =>
-            FindByCondition(x => x.CompanyId == companyId, trackChanges)
-            .OrderBy(e => e.Name);
-        public Employee GetEmployee(int companyId, int id, bool trackChanges) =>
-           FindByCondition(x => x.CompanyId.Equals(companyId) && x.Id.Equals(id), trackChanges).SingleOrDefault();
+        public async Task<IEnumerable<Employee>> GetAllEmployeesAsync(int companyId, bool trackChanges) =>
+             await FindByCondition(x => x.CompanyId == companyId, trackChanges)
+            .OrderBy(e => e.Name).ToListAsync;
+        public async Task<Employee> GetEmployeeAsync(int companyId, int id, bool trackChanges) =>
+           await FindByCondition(x => x.CompanyId.Equals(companyId) && x.Id.Equals(id), trackChanges).SingleOrDefaultAsync();
            
 
-        public void CreateEmployeeForCompany(int companyId, Employee employee)
+        public  void CreateEmployeeForCompany(int companyId, Employee employee)
         {
             employee.CompanyId = companyId;
             Create(employee);
