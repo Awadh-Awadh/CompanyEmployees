@@ -15,19 +15,19 @@ namespace Repository
         {
         }
 
-        public IEnumerable<Company> GetAllCompanies(bool trackChanges) =>
-            FindAll(trackChanges)
+        public async Task<IEnumerable<Company>> GetAllCompaniesAsync(bool trackChanges) =>
+            await FindAll(trackChanges)
             .OrderBy(c => c.Name)
             .ToList();
 
-        public Company GetCompanyById(int id, bool trackChanges) =>
-            FindByCondition(c => c.Id.Equals(id), trackChanges)
+        public async Task<Company> GetCompanyByIdAsync(int id, bool trackChanges) =>
+            await FindByCondition(c => c.Id.Equals(id), trackChanges)
             .SingleOrDefault();
 
         public void CreateCompany(Company company) => Create(company);
 
-        public IEnumerable<Company> GetCompanyCollection(IEnumerable<int> ids, bool trackChanges) =>
-            FindByCondition(x => ids.Contains(x.Id), trackChanges)
+        public async Task<IEnumerable<Company>> GetCompanyCollectionAsync(IEnumerable<int> ids, bool trackChanges) =>
+            await FindByCondition(x => ids.Contains(x.Id), trackChanges)
             .ToList();
         public void DeleteCompany(Company company) => Delete(company);
     }

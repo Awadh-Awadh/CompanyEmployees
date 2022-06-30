@@ -14,7 +14,7 @@ namespace Contracts
     {
         public ICompanyRepository Company { get; }
         public IEmployeeRepository Employee { get; }
-        void Save();
+        Task SaveAsync();
 
     }
 }

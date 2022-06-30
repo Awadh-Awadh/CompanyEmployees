@@ -20,11 +20,11 @@ namespace CompanyEmployees.Controllers
 
         [HttpGet]
 
-        public IActionResult GetCompanies()
+        public async Task<IActionResult> GetCompanies()
         {
             try
             {
-                var comapnies = _repository.Company.GetAllCompanies(trackChanges: false);
+                var comapnies = await _repository.Company.GetAllCompaniesAsync(trackChanges: false);
                 var companyDto = comapnies.Select(x => new CompanyDTO
                 {
                     Id = x.Id,
@@ -44,13 +44,12 @@ namespace CompanyEmployees.Controllers
 
         [HttpGet("{id}", Name = "CompanyById")]
 
-        public ActionResult GetCompanyById(int id)
+        public async Task<ActionResult> GetCompanyById(int id)
         {
-           var company = _repository.Company.GetCompanyById(id, trackChanges: false);
+           var company = await _repository.Company.GetCompanyByIdAsync(id, trackChanges: false);
 
            if(company == null)
-                _logger.LogError($"Company with {id} not found");
-            
+                _logger.LogError($"Company with {id} not found");            
 
            var companyDto = new CompanyDTO
                 {
@@ -64,9 +63,9 @@ namespace CompanyEmployees.Controllers
 
         [HttpGet("collection/{ids}", Name = "CompanyCollection")]
 
-        public IActionResult GetCompanyCollection(IEnumerable<int> ids)
+        public async Task<IActionResult> GetCompanyCollection(IEnumerable<int> ids)
         {
-            var companies = _repository.Company.GetCompanyCollection(ids, trackChanges: false);
+            var companies = await _repository.Company.GetCompanyCollectionAsync(ids, trackChanges: false);
             if (companies.Count() != ids.Count())
                 return NotFound($"some ids are not valid");
             foreach(var company in companies)
@@ -84,7 +83,7 @@ namespace CompanyEmployees.Controllers
 
 
         [HttpPost]
-        public IActionResult CreateCompany([FromBody]CompanyForCreationDto company)
+        public async Task<IActionResult> CreateCompany([FromBody]CompanyForCreationDto company)
         {
             if(company == null)
             {
@@ -107,22 +106,22 @@ namespace CompanyEmployees.Controllers
             
             _repository.Company.CreateCompany(companyEntity);
             
-            _repository.Save();
+            await _repository.SaveAsync();
 
             return CreatedAtRoute("CompanyById", new { id = companyEntity.Id }, companyEntity);
         }
         [HttpDelete]
 
-        public IActionResult DeleteCompany(int id)
+        public async Task<IActionResult> DeleteCompany(int id)
         {
-            if (_repository.Company.GetCompanyById(id, trackChanges: false) is not { } company)
+            if (await _repository.Company.GetCompanyByIdAsync(id, trackChanges: false) is not { } company)
             {
                 _logger.LogInformation($"Company with id: {id} doesn't exist in the database.");
                 return NotFound();
             }
             _repository.Company.DeleteCompany(company);
 
-            _repository.Save();
+            await _repository.SaveAsync();
 
             return NoContent();
         }

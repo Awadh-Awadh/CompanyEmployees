@@ -11,10 +11,10 @@ namespace Contracts
     {
         // Add methods related only to Company only
 
-        IEnumerable<Company> GetAllCompanies(bool trackChanges);
-        Company GetCompanyById(int id, bool trackChanges);
+        Task<IEnumerable<Company>> GetAllCompaniesAsync(bool trackChanges);
+        Task<Company> GetCompanyByIdAsync(int id, bool trackChanges);
         void CreateCompany(Company company);
-        IEnumerable<Company> GetCompanyCollection(IEnumerable<int> id, bool trackChanges);
+        Task<IEnumerable<Company>> GetCompanyCollectionAsync(IEnumerable<int> id, bool trackChanges);
         void DeleteCompany(Company company);
     }
 }
