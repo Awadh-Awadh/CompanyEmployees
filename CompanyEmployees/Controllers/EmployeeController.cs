@@ -32,7 +32,7 @@ public class EmployeeController : ControllerBase
         }
 
         var employees = await _repository.Employee.GetAllEmployeesAsync(companyId, employeeParameters, trackChanges: false);
-
+        Response.Headers.Add("x-pagination", JsonConvert.SerializeObject(employees.MetaData));
         return Ok(employees.Select(x => new EmployeeDTO
         {
             Id = x.Id,
