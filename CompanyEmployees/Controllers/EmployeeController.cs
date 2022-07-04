@@ -1,5 +1,6 @@
 ﻿using Entities.DTOs;
 using Entities.Model;
+using Entities.RequestFeatures;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,7 +22,7 @@ public class EmployeeController : ControllerBase
 
     [HttpGet]
 
-    public async Task<IActionResult> GetAllEmployeeAsync(int companyId, bool trackChanges)
+    public async Task<IActionResult> GetAllEmployee(int companyId, bool trackChanges, [FromQuery] EmployeeParameters employeeParameters)
     {
         var company = await _repository.Company.GetCompanyByIdAsync(companyId, trackChanges: false);
         if (company == null)
@@ -30,7 +31,7 @@ public class EmployeeController : ControllerBase
             return NotFound();
         }
 
-        var employees = await _repository.Employee.GetAllEmployeesAsync(company.Id, trackChanges: false);
+        var employees = await _repository.Employee.GetAllEmployeesAsync(companyId, trackChanges: false);
 
         return Ok(employees.Select(x => new EmployeeDTO
         {
