@@ -2,6 +2,12 @@
 
 namespace Entities.RequestFeatures;
 
+
+/// <summary>
+/// 
+/// abstract to make it more generic. can be inherited by both employee and company
+/// 
+/// </summary>
 public abstract class RequestParameters
 {
     const int maxPageSize = 50;

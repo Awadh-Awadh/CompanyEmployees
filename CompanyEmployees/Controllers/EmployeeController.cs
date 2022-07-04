@@ -31,7 +31,7 @@ public class EmployeeController : ControllerBase
             return NotFound();
         }
 
-        var employees = await _repository.Employee.GetAllEmployeesAsync(companyId, trackChanges: false);
+        var employees = await _repository.Employee.GetAllEmployeesAsync(companyId, employeeParameters, trackChanges: false);
 
         return Ok(employees.Select(x => new EmployeeDTO
         {
