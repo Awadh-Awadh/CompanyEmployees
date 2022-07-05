@@ -27,5 +27,9 @@ public abstract class RequestParameters
 
 public class EmployeeParameters : RequestParameters
 {
+    // uint default value is 0
+    public uint MinAge { get; set; }    
+    public uint MaxAge { get; set; } = int.MaxValue;   
+    public bool ValidAgeRange => MaxAge > MinAge;   
 
 }
