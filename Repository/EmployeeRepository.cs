@@ -15,7 +15,7 @@ public class EmployeeRepository : RepositoryBase<Employee>, IEmployeeRepository
 
     public async Task<PagedList<Employee>> GetAllEmployeesAsync(int companyId, EmployeeParameters employeeParameters, bool trackChanges)
     {
-        var employees = await FindByCondition(e => e.CompanyId == companyId, trackChanges)
+        var employees = await FindByCondition(e => e.CompanyId == companyId &&(e.Age >=employeeParameters.MinAge && e.Age <=employeeParameters.MaxAge), trackChanges)
             .OrderBy(e =>e.Name)
             .ToListAsync();
 

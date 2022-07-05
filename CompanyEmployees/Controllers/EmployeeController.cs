@@ -24,6 +24,9 @@ public class EmployeeController : ControllerBase
 
     public async Task<IActionResult> GetAllEmployee(int companyId, bool trackChanges, [FromQuery] EmployeeParameters employeeParameters)
     {
+        if (!employeeParameters.ValidAgeRange)
+            return BadRequest("Min age can't be greater than max age");
+
         var company = await _repository.Company.GetCompanyByIdAsync(companyId, trackChanges: false);
         if (company == null)
         {
