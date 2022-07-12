@@ -12,4 +12,8 @@
     <ProjectReference Include="..\Infra\Infra.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.19" />
+  </ItemGroup>
+
 </Project>

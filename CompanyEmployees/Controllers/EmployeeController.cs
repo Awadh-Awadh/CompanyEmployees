@@ -1,4 +1,5 @@
-﻿using Entities.DTOs;
+﻿using System.Text.Json.Serialization.Metadata;
+using Entities.DTOs;
 using Entities.Model;
 using Entities.RequestFeatures;
 using Microsoft.AspNetCore.Http;
@@ -35,7 +36,7 @@ public class EmployeeController : ControllerBase
         }
 
         var employees = await _repository.Employee.GetAllEmployeesAsync(companyId, employeeParameters, trackChanges: false);
-        Response.Headers.Add("x-pagination", JsonConvert.SerializeObject(employees.MetaData));
+        Response.Headers.Add("x-pagination", JsonMetadataServices(employees.MetaData));
         return Ok(employees.Select(x => new EmployeeDTO
         {
             Id = x.Id,

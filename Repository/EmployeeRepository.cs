@@ -2,6 +2,7 @@
 using Entities.Model;
 using Entities.RequestFeatures;
 using Infra.Data;
+using Microsoft.EntityFrameworkCore;
 using Repository.Extensions;
 
 
@@ -17,7 +18,7 @@ public class EmployeeRepository : RepositoryBase<Employee>, IEmployeeRepository
 
     public async Task<PagedList<Employee>> GetAllEmployeesAsync(int companyId, EmployeeParameters employeeParameters, bool trackChanges)
     {
-        var employees = await FindByCondition(e => e.CompanyId == companyId, trackChanges)
+        var employees = await FindByCondition(e => e.CompanyId == companyId, trackChanges).AsQueryable()
             .Filter(employeeParameters.MinAge, employeeParameters.MaxAge)
             .Search(employeeParameters.SearchTerm)
             .OrderBy(e =>e.Name)

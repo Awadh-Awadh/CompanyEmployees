@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3txyC384O404WwJvGvlJAgCFRsq7FaUUJ6BfPJCAp/bJpk3zf0E8H5zLXwVA4QhDjZNc+/S+Pl2w8IVXiX7Mvg==",
+  "dgSpecHash": "9krPoPUkGi79LhWBOZI/9mzf24CZJjHYP/GChdeLXsFo0+l/dxnk9v6UbMPDQC8LYXTjnuOMHqK83QuxFZt3jA==",
   "success": true,
   "projectFilePath": "C:\\Users\\AwadhSaid\\Desktop\\Awadh-dev\\Projects\\CompanyEmployees\\CompanyEmployees\\CompanyEmployees.csproj",
   "expectedPackageFiles": [
@@ -72,7 +72,9 @@
     "C:\\Users\\AwadhSaid\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\AwadhSaid\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\AwadhSaid\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
+    "C:\\Users\\AwadhSaid\\.nuget\\packages\\system.linq.dynamic.core\\1.2.19\\system.linq.dynamic.core.1.2.19.nupkg.sha512",
     "C:\\Users\\AwadhSaid\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
+    "C:\\Users\\AwadhSaid\\.nuget\\packages\\system.linq.queryable\\4.3.0\\system.linq.queryable.4.3.0.nupkg.sha512",
     "C:\\Users\\AwadhSaid\\.nuget\\packages\\system.net.http\\4.3.0\\system.net.http.4.3.0.nupkg.sha512",
     "C:\\Users\\AwadhSaid\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\AwadhSaid\\.nuget\\packages\\system.net.sockets\\4.3.0\\system.net.sockets.4.3.0.nupkg.sha512",
@@ -107,7 +109,8 @@
     "C:\\Users\\AwadhSaid\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\AwadhSaid\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\AwadhSaid\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\AwadhSaid\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\AwadhSaid\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\AwadhSaid\\.nuget\\packages\\wilx.system.linq.dynamic.core\\2.1.0\\wilx.system.linq.dynamic.core.2.1.0.nupkg.sha512"
   ],
   "logs": []
 }
