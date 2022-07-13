@@ -1,7 +1,4 @@
-﻿using System.Linq.Dynamic.Core;
-
-namespace Entities.RequestFeatures;
-
+﻿namespace Entities.RequestFeatures;
 
 /// <summary>
 /// 
