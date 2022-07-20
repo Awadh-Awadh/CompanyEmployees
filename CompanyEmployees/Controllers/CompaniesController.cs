@@ -5,8 +5,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CompanyEmployees.Controllers
 {
+    [ApiVersion("2.0")]
     [Route("api/Companies")]
     [ApiController]
+    [ResponseCache(CacheProfileName = "120SecondsDuration")]
     public class CompaniesController : ControllerBase
     {
         private readonly IRepositoryManager _repository;
@@ -43,6 +45,7 @@ namespace CompanyEmployees.Controllers
 
 
         [HttpGet("{id}", Name = "CompanyById")]
+        [ResponseCache(Duration = 180)]
 
         public async Task<ActionResult> GetCompanyById(int id)
         {

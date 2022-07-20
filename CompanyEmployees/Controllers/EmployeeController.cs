@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CompanyEmployees.Controllers;
 
+[ApiVersion("1.0")]
 [Route("api/[controller]")]
 [ApiController]
 
@@ -36,7 +37,7 @@ public class EmployeeController : ControllerBase
         }
 
         var employees = await _repository.Employee.GetAllEmployeesAsync(companyId, employeeParameters, trackChanges: false);
-        Response.Headers.Add("x-pagination", JsonMetadataServices(employees.MetaData));
+        // Response.Headers.Add("x-pagination", JsonMetadataServices(employees.MetaData));
         return Ok(employees.Select(x => new EmployeeDTO
         {
             Id = x.Id,
